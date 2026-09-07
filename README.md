@@ -10,19 +10,19 @@ The purpose of this lab is to strengthen my practical skills through real-world 
 
 - Identity and Access Management (IAM)
 - Identity Governance and Administration (IGA)
-- Active Directory
-- Role-Based Access Control (RBAC)
-- User lifecycle management
-- Access governance and least privilege
-- Windows Server Administration
-- Linux Administration and Command Line
-- Networking and Network Security
-- Cybersecurity Fundamentals
-- Digital Forensics
-- Security Monitoring and Analysis
-- PowerShell and Automation
-- AI in Cybersecurity
-- Troubleshooting and Incident Response
+- Active Directory and Role-Based Access Control (RBAC)
+- User lifecycle management and access governance
+- Windows Server and Linux administration
+- Server and domain hardening
+- Network security and segmentation
+- VPN / secure remote-access concepts
+- Endpoint protection
+- Vulnerability management
+- Centralized logging, SIEM, and security monitoring
+- Incident response and digital forensics
+- PowerShell and automation
+- Cloud IAM concepts
+- Troubleshooting and documentation
 
 ## Lab Environment
 
@@ -35,6 +35,32 @@ Current systems include:
 - Ubuntu Linux virtual machine: Sew4U-Ubuntu-01
 
 The Active Directory environment models Sew4U Academy with departmental Organizational Units, individual user identities, job-role attributes, reporting relationships, and planned security-group-based access controls.
+
+## Free-Tool Commitment
+
+The lab will use free, open-source, community-edition, evaluation, or built-in tools whenever possible. The goal is to build job-ready hands-on skills without requiring paid enterprise lab software.
+
+Planned tools and technologies include:
+
+- Oracle VirtualBox - virtualization platform
+- Windows Server Evaluation - Active Directory/domain lab
+- Ubuntu Linux - Linux administration and security
+- Microsoft Defender Antivirus / Windows Security - endpoint protection
+- Windows Defender Firewall - host firewall and policy practice
+- Group Policy - domain security configuration and hardening
+- PowerShell - IAM administration, auditing, and automation
+- OpenVPN Community Edition or WireGuard - VPN / secure remote-access labs
+- pfSense CE or OPNsense - virtual firewall, routing, and segmentation
+- Nmap - network discovery and authorized lab scanning
+- Greenbone/OpenVAS Community Edition - vulnerability scanning
+- Wazuh - endpoint/security monitoring and SIEM/XDR practice
+- Sysmon - detailed Windows security telemetry
+- Wireshark - network traffic analysis
+- Microsoft Event Viewer / Windows Event Forwarding - Windows logging and centralized event collection
+- Kali Linux - controlled cybersecurity testing when needed
+- GitHub - portfolio and technical documentation
+
+Tool choices may change as the lab grows, but paid software is not required for the planned learning path.
 
 ## Current Progress
 
@@ -51,37 +77,34 @@ The Active Directory environment models Sew4U Academy with departmental Organiza
 - [x] Configured manager/reporting relationships for applicable accounts
 - [ ] Create and configure department security groups
 - [ ] Assign users to appropriate security groups
-- [ ] Implement role-based access control (RBAC)
-- [ ] Configure least-privilege permissions
+- [ ] Implement RBAC and least-privilege permissions
 - [ ] Connect Windows client computers to the domain
-- [ ] Practice joiner, mover, and leaver identity lifecycle scenarios
+- [ ] Practice Joiner-Mover-Leaver identity lifecycle scenarios
 - [ ] Perform access reviews and governance scenarios
-- [ ] Practice Linux administration and command-line tasks
-- [ ] Configure networking and security controls
-- [ ] Complete real-world IAM, IGA, IT, and cybersecurity scenarios
+- [ ] Harden Windows Server and the Active Directory domain
+- [ ] Configure endpoint protection and host firewalls
+- [ ] Build virtual firewall/network segmentation lab
+- [ ] Configure a safe VPN / secure remote-access lab
+- [ ] Perform vulnerability scans and remediation
+- [ ] Centralize logs and build security-monitoring scenarios
+- [ ] Practice incident response and digital-forensics scenarios
+- [ ] Practice PowerShell IAM/security automation
+- [ ] Expand into cloud IAM concepts
 
 ## IAM / IGA Skills Being Practiced
 
-This environment is being developed to practice responsibilities found in IAM Analyst, IAM Engineer, and Identity Governance roles, including:
+This environment is being developed to practice responsibilities found in IAM Analyst, IAM Engineer, and Identity Governance roles, including identity creation and administration, OU design, user attribute management, department and role assignment, manager/reporting hierarchy configuration, RBAC, security group administration, least privilege, Joiner-Mover-Leaver lifecycle management, access reviews, provisioning/deprovisioning, privileged access concepts, documentation, and audit readiness.
 
-- Identity creation and administration
-- Organizational Unit design
-- User attribute management
-- Department and role assignment
-- Manager/reporting hierarchy configuration
-- Role-Based Access Control (RBAC)
-- Security group administration
-- Least-privilege access
-- Joiner-Mover-Leaver (JML) lifecycle management
-- Access reviews and access governance
-- Account provisioning and deprovisioning
-- Privileged access concepts
-- IAM documentation and audit readiness
+## Security Learning Cycle
+
+The lab roadmap follows a practical cycle:
+
+**Build -> Configure Identities -> Control Access -> Harden -> Monitor -> Test Safely -> Detect -> Respond -> Document**
 
 ## Documentation
 
-Detailed lab documentation is maintained in the `docs` directory, including the Active Directory design, organization structure, user accounts, IAM plan, security groups, access-control matrix, and lab architecture.
+Detailed lab documentation is maintained in the `docs` directory, including the Active Directory design, organization structure, user accounts, IAM plan, security groups, access-control matrix, lab architecture, free-tools roadmap, and troubleshooting log.
 
 ## Goal
 
-My goal is to develop practical, job-ready cybersecurity and identity security skills by building, managing, securing, troubleshooting, governing, and documenting a realistic IT environment. The project is designed to provide hands-on experience that supports future IAM Analyst, IAM Engineer, and Identity Governance/IGA career opportunities.
+My goal is to develop practical, job-ready cybersecurity and identity security skills by building, managing, securing, troubleshooting, governing, and documenting a realistic IT environment. The project supports future IAM Analyst, IAM Engineer, Identity Governance/IGA, and cybersecurity opportunities while reinforcing skills learned throughout my cybersecurity degree program.
