@@ -9,6 +9,8 @@ The purpose of this lab is to strengthen my practical skills through real-world 
 ## Areas of Focus
 
 - Identity and Access Management (IAM)
+- Ethical hacking and penetration testing in authorized lab environments
+- Active Directory attack-and-defense scenarios
 - Identity Governance and Administration (IGA)
 - Active Directory and Role-Based Access Control (RBAC)
 - User lifecycle management and access governance
@@ -21,7 +23,7 @@ The purpose of this lab is to strengthen my practical skills through real-world 
 - Centralized logging, SIEM, and security monitoring
 - Incident response and digital forensics
 - PowerShell and automation
-- Cloud IAM concepts
+- Cloud IAM and cloud security concepts
 - Troubleshooting and documentation
 
 ## Lab Environment
@@ -31,6 +33,7 @@ This lab uses Oracle VirtualBox to run multiple systems in a simulated organizat
 Current systems include:
 
 - Windows Server domain controller: Sew4U-DC01
+- Windows 11 Pro client: Sew4U-CLIENT01 (installation/troubleshooting in progress)
 - Active Directory domain: sew4u.local
 - Ubuntu Linux virtual machine: Sew4U-Ubuntu-01
 
@@ -57,7 +60,9 @@ Planned tools and technologies include:
 - Sysmon - detailed Windows security telemetry
 - Wireshark - network traffic analysis
 - Microsoft Event Viewer / Windows Event Forwarding - Windows logging and centralized event collection
-- Kali Linux - controlled cybersecurity testing when needed
+- Kali Linux - dedicated ethical-hacking / penetration-testing VM for authorized lab targets
+- OWASP Juice Shop - intentionally vulnerable web application practice
+- Burp Suite Community Edition - web security testing
 - GitHub - portfolio and technical documentation
 
 Tool choices may change as the lab grows, but paid software is not required for the planned learning path.
@@ -78,6 +83,7 @@ Tool choices may change as the lab grows, but paid software is not required for 
 - [ ] Create and configure department security groups
 - [ ] Assign users to appropriate security groups
 - [ ] Implement RBAC and least-privilege permissions
+- [ ] Complete Sew4U-CLIENT01 Windows 11 Pro build with proper UEFI/TPM/Secure Boot configuration
 - [ ] Connect Windows client computers to the domain
 - [ ] Practice Joiner-Mover-Leaver identity lifecycle scenarios
 - [ ] Perform access reviews and governance scenarios
@@ -89,11 +95,32 @@ Tool choices may change as the lab grows, but paid software is not required for 
 - [ ] Centralize logs and build security-monitoring scenarios
 - [ ] Practice incident response and digital-forensics scenarios
 - [ ] Practice PowerShell IAM/security automation
-- [ ] Expand into cloud IAM concepts
+- [ ] Build an isolated ethical-hacking practice network
+- [ ] Add Kali Linux attacker VM and intentionally vulnerable targets
+- [ ] Practice reconnaissance, enumeration, vulnerability validation, and controlled exploitation in the lab
+- [ ] Practice Active Directory attack-and-defense scenarios
+- [ ] Document findings, remediation, and lessons learned from penetration-testing exercises
+- [ ] Expand into cloud IAM and cloud security concepts
+- [ ] Build Microsoft Entra ID identity/governance practice scenarios using free capabilities where possible
+- [ ] Add carefully controlled cloud labs using free tiers/credits where appropriate
 
 ## IAM / IGA Skills Being Practiced
 
 This environment is being developed to practice responsibilities found in IAM Analyst, IAM Engineer, and Identity Governance roles, including identity creation and administration, OU design, user attribute management, department and role assignment, manager/reporting hierarchy configuration, RBAC, security group administration, least privilege, Joiner-Mover-Leaver lifecycle management, access reviews, provisioning/deprovisioning, privileged access concepts, documentation, and audit readiness.
+
+## Ethical Hacking / Attack-and-Defense Focus
+
+The lab is also being developed as a safe, isolated environment for authorized ethical-hacking practice. Offensive exercises will target only systems I own/control or purpose-built vulnerable training targets. The goal is to understand how attacks work so I can better design identity controls, investigate security events, remediate weaknesses, and connect offensive findings back to IAM and governance.
+
+Planned practice includes reconnaissance and enumeration, network/service discovery, web-application testing, vulnerability assessment, Windows/Linux privilege concepts, Active Directory attack paths, authentication and access-control weaknesses, log analysis, detection, remediation, and professional findings documentation.
+
+## Cloud Security Direction
+
+The long-term lab will connect on-premises identity concepts with cloud identity and security. Planned topics include Microsoft Entra ID, cloud users and groups, authentication and MFA concepts, RBAC, least privilege, identity lifecycle/governance, cloud logging, and carefully controlled AWS/cloud-security exercises using free capabilities whenever possible.
+
+## Troubleshooting Standard
+
+Lab documentation distinguishes between **FIXED** (the underlying cause was corrected) and **WORKAROUND** (the immediate problem was bypassed but the root cause remains). Current example: the Sew4U-CLIENT01 Windows 11 TPM/Secure Boot requirement was bypassed during setup after UEFI-related boot/display trouble; the underlying UEFI/TPM/Secure Boot configuration remains unresolved and should be corrected before the client build is considered complete.
 
 ## Security Learning Cycle
 
@@ -107,4 +134,4 @@ Detailed lab documentation is maintained in the `docs` directory, including the 
 
 ## Goal
 
-My goal is to develop practical, job-ready cybersecurity and identity security skills by building, managing, securing, troubleshooting, governing, and documenting a realistic IT environment. The project supports future IAM Analyst, IAM Engineer, Identity Governance/IGA, and cybersecurity opportunities while reinforcing skills learned throughout my cybersecurity degree program.
+My goal is to develop practical, job-ready cybersecurity and identity security skills by building, managing, securing, troubleshooting, governing, and documenting a realistic IT environment. The project supports future IAM Analyst, IAM Engineer, Identity Governance/IGA, penetration testing/ethical hacking, cloud security, and broader cybersecurity opportunities while reinforcing skills learned throughout my cybersecurity degree program.
